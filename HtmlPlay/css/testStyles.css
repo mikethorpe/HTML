@@ -1,0 +1,52 @@
+/* Examples below of three different methods of choosing colours - html 5,
+hex and rgb */
+h1 {
+  color: red;
+}
+
+
+body {
+  background-color: #800000;
+  /* Choose font - arial is preferred. There are websafe and non websafe fonts.
+  Non websafe may not work presumably */
+
+  /*font-family: Arial, Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  */
+  /* Same as above */
+  font: bold 20px Arial, Helvetica;
+
+/* changes height between the lines - can also use px as a unit*/
+  line-height: 1.6em;
+}
+
+/*p {
+  color: rgb(0,0,255);
+}*/
+
+.container{
+  /* Use a percentage when you make a container so the container resizes
+  correctly relative to the size of the page */
+width: 80%;
+/* gives an even amount of margin */
+margin: auto;
+}
+
+/* This is how you target a class */
+.box-1{
+  background-color: #333;
+  color: white;
+  border-top: green 5px solid;
+  border-left: green 5px solid;
+  border-right: green 5px solid;
+  border-bottom: green 5px solid;
+
+  /* or we can just do
+  border: green 5px solid;
+  */
+  border-width: 3px;
+  border-bottom-style: dotted;
+
+
+}
