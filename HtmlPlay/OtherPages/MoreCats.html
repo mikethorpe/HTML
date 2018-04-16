@@ -4,7 +4,7 @@ the page is written in. It must be the first tag in the html file the above
 is for html 5-->
 <html>
 <head>
-  <title>More Super Cats!</title>
+  <title align="center">More Super Cats!</title>
 
 </head>
 
@@ -29,6 +29,26 @@ is for html 5-->
       <li> Interesting fact about cats number 2 </li>
       <li> Interesting fact about cats number 3 </li>
   </ol>
+
+<!-- div can be used to group sections of a page -->
+<!-- ids can be given to a tag - they must be unique. CSS styles can be applied
+to an id-->
+  <div id="FirstSetOfDivTagsId">
+      <!-- span can be used to apply styles without line breaks etc that would
+      be given by a div tag-->
+      <p> Some text about <span class="AnotherStyleGroup">Cats</span> </p>
+      <p> Some more text about Cats </p>
+      <p> Some more text about Cats </p>
+  </div>
+
+<!-- class can be used to apply styles to any set of tags which are part of
+the class-->
+  <div class="SuperStyleGroup">
+      <p> Some text about Cats </p>
+      <p> Some more text about Cats </p>
+      <p> Some more text about Cats </p>
+  </div>
+
 
 </body>
 
