@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 85px;
+  min-height: 50px;
+  width: 100%;
+  position: fixed;
+  /**background-image: url("../images/glen_sannox.jpg");**/
+  background-color: #5DC5D1;
+  background-size: cover;
+  z-index: 5;
+}
+
+.nav-bar {
+  font-family: arial;
+  position: static;
+  height: 100%;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.nav-btn {
+  border: black;
+  border-style:dotted;
+  border-width: thin;
+  align-items: stretch;
+
+  width: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+
+}
+
+.nav-btn a {
+  text-decoration: none;
+  color: black;
+  /**background-color: red;**/
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  top: 85px;
+}
