@@ -3,9 +3,8 @@
   padding: 0;
 }
 
-header {
+.nav-container {
   height: 85px;
-  min-height: 50px;
   width: 100%;
   position: fixed;
   /**background-image: url("../images/glen_sannox.jpg");**/
@@ -33,10 +32,9 @@ header {
   border-width: thin;
   align-items: stretch;
 
-  width: 60px;
+  width: 80px;
   padding-top: 10px;
   padding-bottom: 10px;
-
 
 }
 
@@ -48,7 +46,46 @@ header {
   width: 100%;
 }
 
-.content {
+.page {
   position: relative;
   top: 85px;
+}
+
+.splash-container {
+  width: 100%;
+  height: 250px;
+  background-image: url("../images/glen_sannox.jpg");
+  background-size: cover;
+}
+
+.splash-container .splash-overlay {
+  margin: auto;
+  width: 225px;
+  height: 225px;
+}
+
+.splash-container .splash-overlay p {
+  position: fixed;
+  font-family: futura;
+  font-size: 30;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.7;
+}
+
+
+
+.content {
+  position: static;
+
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 45px;
+  background-color: #5DC5D1;
+  font-family: arial;
 }
