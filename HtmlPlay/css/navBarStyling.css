@@ -16,11 +16,14 @@
 .nav-bar {
   font-family: arial;
   position: static;
+
   height: 100%;
   width: 500px;
+
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
+
   justify-items: center;
   align-items: center;
 
@@ -28,23 +31,21 @@
 
 .nav-btn {
   border: black;
-  border-style:dotted;
+  border-style: dotted;
   border-width: thin;
-  align-items: stretch;
-
   width: 80px;
   padding-top: 10px;
   padding-bottom: 10px;
-
+  text-align: center;
 }
 
-.nav-btn a {
+.nav-btn > a {
   text-decoration: none;
   color: black;
   /**background-color: red;**/
-  height: 100%;
-  width: 100%;
 }
+
+
 
 .page {
   position: relative;
@@ -56,28 +57,42 @@
   height: 250px;
   background-image: url("../images/glen_sannox.jpg");
   background-size: cover;
+  z-index: 6;
 }
 
 .splash-container .splash-overlay {
   margin: auto;
   width: 225px;
   height: 225px;
+  overflow: hidden;
+  border: red;
 }
 
-.splash-container .splash-overlay p {
+.splash-container .splash-overlay h1 {
   position: fixed;
+  top: 25%;
   font-family: futura;
   font-size: 30;
-  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  opacity: 0.7;
+  border: green;
+
+}
+.splash-container .splash-overlay h3 {
+  position: static;
+  top: 25%;
+  font-family: futura;
+  font-size: 30;
   text-transform: uppercase;
   color: white;
   opacity: 0.7;
 }
 
 
-
 .content {
   position: static;
+  z-index: 7;
 
 }
 
@@ -88,4 +103,13 @@
   height: 45px;
   background-color: #5DC5D1;
   font-family: arial;
+}
+
+.footer-container > .copyright {
+  position: relative;
+  float: right;
+
+  display: inline-block;
+  text-align: center;
+  background-color: red;
 }
